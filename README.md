@@ -22,7 +22,7 @@ To setup the Lambda:
 8. Set the following environment variables - EMAIL_TO_ADDRESS, EMAIL_FROM_ADDRESS. Note that these email addresses have to be verified in the Amazon Simple Email Service before emails will be sent. 
 
 Building the solution:
-1. Create a SNS topic. 
+1. Create an SNS topic. 
 2. Create a CloudWatch alarm and use the SNS topic as the target.
 3. Subscribe the Lambda to the SNS topic.
 
