@@ -17,3 +17,5 @@ This Lambda function is intended to be subscribed to an Amazon SNS topic that is
 3. ZIP the entire project 'zip -r snapshotgraphsalarmdemo.zip ./*'
 4. Create a new NodeJS Lambda function and upload the ZIP as the source code. 
 5. To execute, the Lambda function requires an IAM role with permissions for Amazon SES, Amazon SNS (readonly) and Amazon CloudWatch (readonly). 
+
+See the CloudWatch API documentation for [GetMetricWidgetImage](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricWidgetImage.html) for more information. 
