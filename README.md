@@ -26,6 +26,6 @@ Building the solution:
 2. Create a CloudWatch alarm and set the SNS topic as the target.
 3. Subscribe the Lambda to the SNS topic.
 
-When the CloudWatch alarm is triggered the Lambda function will send an email will be sent to the address set in the Lambda environment variable EMAIL_TO_ADDRESS.  
+When the CloudWatch alarm is triggered the Lambda function will send an email to the address set in the Lambda environment variable EMAIL_TO_ADDRESS.  
 
 See the CloudWatch API documentation for [GetMetricWidgetImage](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricWidgetImage.html) for more information. 
