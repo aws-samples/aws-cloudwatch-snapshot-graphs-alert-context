@@ -23,7 +23,7 @@ To setup the Lambda:
 
 Building the solution:
 1. Create an SNS topic. 
-2. Create a CloudWatch alarm and use the SNS topic as the target.
+2. Create a CloudWatch alarm and set the SNS topic as the target.
 3. Subscribe the Lambda to the SNS topic.
 
 When the CloudWatch alarm is triggered the Lambda function should execute and an email will be sent to the address set in the Lambda environment variable EMAIL_TO_ADDRESS.  
