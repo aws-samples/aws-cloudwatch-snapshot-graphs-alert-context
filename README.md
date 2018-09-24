@@ -10,7 +10,7 @@ This sample code is made available under a modified MIT license. See the LICENSE
 
 This project includes code that is intended to run as an AWS Lambda function. Full instructions can be found in the associated blog post on the AWS DevOps blog. 
 
-This Lambda function is intended to be subscribed to an Amazon SNS topic that is the target of a Amazon CloudWatch alarm. To setup the Lambda: 
+This Lambda function is intended to be subscribed to an Amazon SNS topic that is the target of an Amazon CloudWatch alarm. To setup the Lambda: 
 
 1. Download the repository. 
 2. Run 'npm install' to create dependencies. 
