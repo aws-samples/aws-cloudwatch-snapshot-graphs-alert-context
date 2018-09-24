@@ -19,5 +19,6 @@ This Lambda function is intended to be subscribed to an Amazon SNS topic that is
 5. Set handler to emailer.myHandler. 
 6. Increase execution timeout to 30s.
 7. This Lambda function requires an IAM role with permissions for Amazon SES, Amazon SNS (readonly) and Amazon CloudWatch (readonly). 
+8. Set the following environment variables - EMAIL_TO_ADDRESS, EMAIL_FROM_ADDRESS. Note that these email addresses have to be verified in the Amazon Simple Email Service before emails will be sent. 
 
 See the CloudWatch API documentation for [GetMetricWidgetImage](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricWidgetImage.html) for more information. 
