@@ -10,7 +10,7 @@ This sample code is made available under a modified MIT license. See the LICENSE
 
 This project includes code that is intended to run as an AWS Lambda function. Full instructions can be found in the associated blog post on the AWS DevOps blog. 
 
-To setup the Lambda: 
+### Setup the Lambda: 
 
 1. Download the repository. 
 2. Run 'npm install' to create dependencies. 
@@ -21,11 +21,16 @@ To setup the Lambda:
 7. This Lambda function requires an IAM role with permissions for Amazon SES, Amazon SNS (readonly) and Amazon CloudWatch (readonly). 
 8. Set the following environment variables - EMAIL_TO_ADDRESS, EMAIL_FROM_ADDRESS. Note that these email addresses have to be verified in the Amazon Simple Email Service before emails will be sent. 
 
-Building the solution:
+### Building the solution:
 1. Create an SNS topic. 
 2. Create a CloudWatch alarm and set the SNS topic as the target.
 3. Subscribe the Lambda to the SNS topic.
 
 When the CloudWatch alarm is triggered the Lambda function will send an email to the address set in the Lambda environment variable EMAIL_TO_ADDRESS.  
+
+### Troubleshooting
+
+1. Check that your email address has been verified in Amazon Simple Email Service. 
+2. View the Lambda log file in CloudWatch. 
 
 See the CloudWatch API documentation for [GetMetricWidgetImage](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricWidgetImage.html) for more information. 
