@@ -1,6 +1,6 @@
 ## AWS Cloudwatch Snapshot Graphs Alert Context
 
-Code samples related to "Reduce Time to Resolution with Amazon CloudWatch Snapshot Graphs and Alerts” blog post published on the AWS DevOps blog. This sample demonstrates how to integrate CloudWatch snapshot graphs with email alerts to add more context to the alert.
+Code samples related to "Reduce Time to Resolution with Amazon CloudWatch Snapshot Graphs and Alerts” blog post published on the [AWS DevOps blog](https://aws.amazon.com/blogs/devops/reduce-time-to-resolution-with-amazon-cloudwatch-snapshot-graphs-and-alerts/). This sample demonstrates how to integrate CloudWatch snapshot graphs with email alerts to add more context to the alert.
 
 ## License Summary
 
