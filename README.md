@@ -2,7 +2,7 @@
 
 Code samples related to "Reduce Time to Resolution with Amazon CloudWatch Snapshot Graphs and Alerts” blog post published on the [AWS DevOps blog](https://aws.amazon.com/blogs/devops/reduce-time-to-resolution-with-amazon-cloudwatch-snapshot-graphs-and-alerts/). This sample demonstrates how to integrate CloudWatch snapshot graphs with email alerts to add more context to the alert.
 
-Note that whilst the CloudWatch snapshot graphs API is available in all public regions, the email service used in this sample (Simple Email Service) is only available in a limited number of regions. See the AWS [service availability matrix](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for a full list of availability for SES. To run this sample in a region that is not supported by SES you will need to use a different email service.  
+Note that whilst the CloudWatch snapshot graphs API is available in all public regions, the email service used in this sample (Simple Email Service) is only available in a limited number of regions. See the AWS [service availability matrix](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for a full list of SES regions. To run this sample in a region that is not supported by SES you will need to use a different email service.  
 
 ## License Summary
 
