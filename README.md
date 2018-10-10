@@ -32,7 +32,7 @@ When the CloudWatch alarm is triggered the Lambda function will send an email to
 
 ### Troubleshooting
 
-1. Check that Simple Email Service (SES) is [available in your region](See the AWS [service availability matrix](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for a full list of availability for SES). 
+1. Check that Simple Email Service (SES) is [available in your region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for a full list of availability for SES). 
 2. Check that your email address has been verified in Amazon Simple Email Service. 
 3. View the Lambda log file in CloudWatch. 
 
