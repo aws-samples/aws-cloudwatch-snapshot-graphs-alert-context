@@ -2,6 +2,8 @@
 
 Code samples related to "Reduce Time to Resolution with Amazon CloudWatch Snapshot Graphs and Alerts” blog post published on the [AWS DevOps blog](https://aws.amazon.com/blogs/devops/reduce-time-to-resolution-with-amazon-cloudwatch-snapshot-graphs-and-alerts/). This sample demonstrates how to integrate CloudWatch snapshot graphs with email alerts to add more context to the alert.
 
+Note that whilst the CloudWatch snapshot graphs API is available in all public regions, the email service used in this sample (Simple Email Service) is only available in a limited number of regions. See the AWS [service availability matrix](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for a full list of availability for SES. To run this sample in a region that is not supported by SES you will need to use a different email service.  
+
 ## License Summary
 
 This sample code is made available under a modified MIT license. See the LICENSE file.
@@ -30,7 +32,8 @@ When the CloudWatch alarm is triggered the Lambda function will send an email to
 
 ### Troubleshooting
 
-1. Check that your email address has been verified in Amazon Simple Email Service. 
-2. View the Lambda log file in CloudWatch. 
+1. Check that Simple Email Service (SES) is [available in your region](See the AWS [service availability matrix](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) for a full list of availability for SES). 
+2. Check that your email address has been verified in Amazon Simple Email Service. 
+3. View the Lambda log file in CloudWatch. 
 
 See the CloudWatch API documentation for [GetMetricWidgetImage](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricWidgetImage.html) for more information. 
