@@ -21,7 +21,7 @@ This project includes code that is intended to run as an AWS Lambda function. Fu
 5. Set handler to emailer.myHandler. 
 6. Increase execution timeout to 30s.
 7. This Lambda function requires an IAM role with permissions for Amazon SES, Amazon SNS (readonly) and Amazon CloudWatch (readonly). This is in addition to the AWSLambdaBasicExecutionRole. 
-8. Set the following environment variables - EMAIL_TO_ADDRESS, EMAIL_FROM_ADDRESS. Note that these email addresses have to be verified in the Amazon Simple Email Service before emails will be sent. 
+8. Set the following environment variables - EMAIL_TO_ADDRESS, EMAIL_FROM_ADDRESS, MAIL_SERVER_REGION. Note that the email addresses have to be verified in the Amazon Simple Email Service before emails will be sent. SES is only available in a limited number of regions and you can run the Lambda and SES in different regions by specifying MAIL_SERVER_REGION. 
 
 ### Building the solution:
 1. Create an SNS topic. 
