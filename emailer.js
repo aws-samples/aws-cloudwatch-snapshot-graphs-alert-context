@@ -6,6 +6,7 @@ const AWS = require('aws-sdk'),
 
 const email_to = process.env.EMAIL_TO_ADDRESS;
 const email_from = process.env.EMAIL_FROM_ADDRESS;
+const mail_server_region = process.env.MAIL_SERVER_REGION;
 const region = process.env.AWS_REGION;
 
 let widgetDefinition = { MetricWidget: 
@@ -99,7 +100,7 @@ function sendImagesToEmail(from, to, subject, images, html,text) {
 
     return new Promise(function(resolve, reject) {
 
-    let ses = new AWS.SES({ region: region }),
+    let ses = new AWS.SES({ region: mail_server_region }),
         transporter = nodemailer.createTransport({ SES: ses }),
         imagesHtml = `<img src="cid:imageId">`,
         emailParams = {
